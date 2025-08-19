@@ -1,2 +1,62 @@
+# Cyclistic Project .gitignore
+# This file specifies intentionally untracked files to ignore in the Cyclistic project repository.
+
+
+# ------------------------------
+# Python cache & environment
+# ------------------------------
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg
+*.egg-info/
+dist/
+build/
+venv/
+env/
+.env
+
+# ------------------------------
+# Jupyter Notebook checkpoints
+# ------------------------------
+.ipynb_checkpoints/
+
+# ------------------------------
+# Data folders
+# ------------------------------
+data/raw/
+# Ignore all raw datasets but keep README.md in that folder
+!data/raw/README.md
+data/cleaned/
+# If cleaned datasets are small and safe to push, remove the above line
+
+# ------------------------------
+# Operating system files
+# ------------------------------
 .DS_Store
-Cyclistic Notes
+Thumbs.db
+
+# ------------------------------
+# Logs
+# ------------------------------
+*.log
+
+# ------------------------------
+# Temporary files
+# ------------------------------
+*.tmp
+*.bak
+*.swp
+
+# ------------------------------
+# VS Code settings (optional)
+# ------------------------------
+.vscode/
+
+# ------------------------------
+# Othere Files
+# ------------------------------
+
+Cyclistic Notes.txt
+
