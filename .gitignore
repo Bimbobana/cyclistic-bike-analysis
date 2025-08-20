@@ -1,7 +1,3 @@
-# Cyclistic Project .gitignore
-# This file specifies intentionally untracked files to ignore in the Cyclistic project repository.
-
-
 # ------------------------------
 # Python cache & environment
 # ------------------------------
@@ -15,6 +11,7 @@ dist/
 build/
 venv/
 env/
+.venv/
 .env
 
 # ------------------------------
@@ -25,11 +22,15 @@ env/
 # ------------------------------
 # Data folders
 # ------------------------------
-data/raw/
-# Ignore all raw datasets but keep README.md in that folder
+# Ignore ALL raw data files (huge, not for Git)
+data/raw/*
 !data/raw/README.md
-data/cleaned/
-# If cleaned datasets are small and safe to push, remove the above line
+
+# Ignore cleaned data too (unless you want to keep small processed outputs)
+data/cleaned/*
+
+# Allow only metadata/notes in data folders
+!data/cleaned/README.md
 
 # ------------------------------
 # Operating system files
@@ -58,4 +59,3 @@ Thumbs.db
 # Other Files
 # ------------------------------
 Cyclistic Notes.txt
-# Ignore any personal notes or temporary files
